@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mde-lang <mde-lang@student.42mulhouse.fr>  +#+  +:+       +#+        */
+/*   By: mde-lang <mde-lang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:42:06 by mde-lang          #+#    #+#             */
-/*   Updated: 2023/05/29 22:48:32 by mde-lang         ###   ########.fr       */
+/*   Updated: 2024/05/23 16:40:17 by mde-lang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Phonebook.class.hpp"
-#include "Contact.class.hpp"
+#include "Phonebook.hpp"
+#include "Contact.hpp"
 
 int main(void)
 {
@@ -45,7 +45,7 @@ int main(void)
                 std::getline(std::cin, input);
                 if (input >= "1" && input <= "9")
                 {
-                    directory.display_a_contact(directory, input);
+                    directory.displayLine(directory, input);
                     break ;
                 }
                 else

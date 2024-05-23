@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mde-lang <mde-lang@student.42mulhouse.fr>  +#+  +:+       +#+        */
+/*   By: mde-lang <mde-lang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/27 23:42:06 by mde-lang          #+#    #+#             */
-/*   Updated: 2023/05/29 22:48:32 by mde-lang         ###   ########.fr       */
+/*   Updated: 2024/05/23 16:57:55 by mde-lang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef _CONTACT_CLASS_HPP
-# define _CONTACT_CLASS_HPP
+
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
 
 # include <iostream>
 # include <iomanip>
@@ -18,29 +19,27 @@
 # include <stdlib.h>
 
 class Contact {
+
 public:
     Contact();
     ~Contact();
-    void set_first(std::string input);
-    void set_last(std::string input);
-    void set_nick(std::string input);
-    void set_phone(std::string input);
-    void set_secret(std::string input);
-    void get_first();
-    void get_last();
-    void get_nick();
-    void get_phone();
-    void get_secret();
-    std::string get();
+    void setFirst(std::string input);
+    void setLast(std::string input);
+    void setNick(std::string input);
+    void setPhone(std::string input);
+    void setSecret(std::string input);
+    std::string getFirst();
+    std::string getLast();
+    std::string getNick();
+    std::string getPhone();
+    std::string getSecret();
     int repertoring(std::string input, int i);
-    std::string first_name;
-    std::string last_name;
-    std::string nick_name;
-    std::string phone_number;
-    std::string darkest_secret;
 private:
-    
-
+    std::string _first_name;
+    std::string _last_name;
+    std::string _nick_name;
+    std::string _phone_number;
+    std::string _darkest_secret;
 };
 
 #endif
